@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exelente</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+</head>
+<body>
+    <header>
+        <a href="./inicial.html">
+            <img src="./src/img/Excelente.png">
+        </a>    
+        <div class="apresentacao">
+            <h2>Atendimento Excelente</h2>
+            <p>Deixe sua opnião sobre o nosso atendimento!</p>
+        </div>
+    </header>
+    <main class="conteiner">
+        <main class="conteiner">
+            <form class="contato" action="https://formsubmit.co/Linfersonm@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/inicial.html">
+                <input type="hidden" nome="nome" value="Atendimento Exelente">
+                <input type="hidden" name="_subject" value="Atendimento Excelente!">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
+                <label for="message">Menssagem</label>
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                <button type="submit">Enviar</button>
+         </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+        div{
+            background-image: url(./src/img/fundo.png);
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+    <form>
+        <h3>Loguin</h3>
+        <input type="text" placeholder="loguin" id="loguin">
+        <input type="password" placeholder="password" id="senha">
+        <input type="submit" onclick="logar(); return false">
+    </form>
+    </div>
+    <script>
+        function logar(){
+            var loguin = document.getElementById('loguin').value;
+            var senha = document.getElementById('senha').value;
+            if(loguin == "admin" && senha== "maxD001"){
+                location.href = "inicial.html";
+            }else{
+                alert('usuario ou senha incorretos')
+            }
+        }
+    </script>
+</body>
+</html>
